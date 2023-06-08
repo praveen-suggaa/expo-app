@@ -124,7 +124,7 @@ jobs:
         with:
           eas-version: latest
           token: ${{ secrets.EXPO_TOKEN }}
-        working-directory: ./your-working-directory
+        working-directory: ./test-app
 
       - name: Install dependencies
         run: yarn install
@@ -132,5 +132,5 @@ jobs:
 
       - name: Publish update
         run: eas Update --auto
-        working-directory: ./your-working-directory
+        working-directory: ./test-app
 
