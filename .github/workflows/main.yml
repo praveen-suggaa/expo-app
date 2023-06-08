@@ -29,37 +29,37 @@
 
 #       - name: Run tests
 #         run: npm test
-# name: Run Tests
+name: Run Tests
 
-# on:
-#   push:
-#     branches:
-#       - expo-router
+on:
+  push:
+    branches:
+      - expo-router
 
-# jobs:
-#   test:
-#     runs-on: ubuntu-latest
+jobs:
+  test:
+    runs-on: ubuntu-latest
 
-#     steps:
-#       - name: Checkout repository
-#         uses: actions/checkout@v2
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
 
-#       - name: Set up Node.js
-#         uses: actions/setup-node@v2
-#         with:
-#           node-version: 14
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
 
-#       - name: Install dependencies
-#         run: npm i
+      - name: Install dependencies
+        run: npm i
 
-#       - name: Start the Expo server
-#         run: npm start &
+      - name: Start the Expo server
+        run: npm start &
 
-#       - name: Wait for Expo server to start
-#         run: sleep 60
+      - name: Wait for Expo server to start
+        run: sleep 60
 
-#       - name: Run tests
-#         run: npm test
+      - name: Run tests
+        run: npm test
 
 # name: update
 # on: push
