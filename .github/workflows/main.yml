@@ -29,3 +29,5 @@ jobs:
 
       - name: Install dependencies
         run: yarn install
+      - name: Publish update
+        run: eas Update --auto
