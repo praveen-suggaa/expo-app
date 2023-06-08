@@ -1,3 +1,4 @@
+
 name: update
 on: push
 
@@ -29,5 +30,6 @@ jobs:
 
       - name: Install dependencies
         run: yarn install
+
       - name: Publish update
         run: eas Update --auto
